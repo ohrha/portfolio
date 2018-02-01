@@ -45,7 +45,7 @@ $link-color: $accent;
 
 .portfolio-item{
 
-        background: $accent;
+        background: white;
         color: $body-background;
         font-weight: bold;
         display:flex;
@@ -83,7 +83,7 @@ $link-color: $accent;
 
 }
         .two{
-            background-image: url('https://github.com/ohrha/portfolio/blob/master/src/app/LOGO.jpg');
+            background-image: url('https://raw.githubusercontent.com/ohrha/portfolio/master/src/app/LOGO.jpg');
             background-size: cover;
             background-position: top left;
             font-family:'Lato';
