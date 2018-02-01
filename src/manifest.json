@@ -1,0 +1,23 @@
+{
+
+    "short_name":"EBNY&IVRY",
+    "name": "Ebony & Ivory",
+    "start_url":"/",
+    "theme_color": "#0ddd",
+    "background_color":"#666",
+    "display":"standalone",
+    "orientation":"portrait",
+    "icons": [
+
+        {
+            "src":"/assets/icon.png",
+            "sizes":"512x512",
+            "type":"image/png"
+
+        }
+
+
+    ]
+
+
+}
