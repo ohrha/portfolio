@@ -1,0 +1,17 @@
+
+{
+  "routing": {
+    "index": "/index.html",
+    "routes": {
+      "/": {
+        "prefix": false
+      },
+      "/home": {
+        "prefix": false
+      },
+      "/work": { // any routes starting with '/work'
+        "prefix": true
+      }
+    }
+  }
+}
