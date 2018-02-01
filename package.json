@@ -32,8 +32,8 @@
     "zone.js": "^0.8.19",
     "express":"*",
     "cors":"*",
-    "body-parser":"*",
-    "nodemon":"*"
+    "body-parser":"*"
+    
 
   },
   "devDependencies": {
