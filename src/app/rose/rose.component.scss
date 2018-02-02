@@ -51,7 +51,7 @@ $link-color: $accent;
         
         background-color: $orange;
         grid-column:1/ span 5;
-        grid-row:8/span 11;
+        grid-row:9/span 11;
         height:20%;
         z-index:101;
     }
@@ -60,10 +60,21 @@ $link-color: $accent;
         background-color: $white;
         grid-column:2/span 5;
         grid-row:5/9;
-        font-size:30px;
+        
         text-align:center;
         z-index:100;
 
+    }
+    .h3styling{
+         font-family:'Open Sans Condensed';
+         font-size:30px;
+
+
+    }
+    .styling{
+
+        font-family:'Open Sans Condensed';
+         font-size:17px;
     }
     .two{
             background-image: url('https://raw.githubusercontent.com/ohrha/portfolio/master/src/app/LOGO.jpg');
