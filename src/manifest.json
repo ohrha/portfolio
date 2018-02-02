@@ -3,7 +3,7 @@
     "short_name":"EBNY&IVRY",
     "name": "Ebony & Ivory",
     "start_url":"/",
-    "theme_color": "#0ddd",
+    "theme_color": "#666",
     "background_color":"#666",
     "display":"standalone",
     "orientation":"portrait",
