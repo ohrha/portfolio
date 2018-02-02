@@ -11,9 +11,13 @@ import { AppComponent } from './app.component';
 import { environment } from '../environments/environment';
 import { RoseComponent } from './rose/rose.component';
 import { HomeComponent } from './home/home.component';
+import { MusicComponent } from './music/music.component';
 
 const appRoutes = [
-
+{ 
+  path:'music', component:  MusicComponent
+}
+,
 { 
   path:'rose', component:  RoseComponent
 }
@@ -28,7 +32,8 @@ const appRoutes = [
   declarations: [
     AppComponent,
     RoseComponent,
-    HomeComponent
+    HomeComponent,
+    MusicComponent
   ],
   imports: [
     BrowserModule,
