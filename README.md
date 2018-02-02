@@ -1,6 +1,7 @@
 # Portfolio
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.0-beta.1.
+A quick portfolio site, created as a way to display some of the project i've been involved in, as well as get 
+to know the new css grid module, now available in all major browsers.
 
 ## Development server
 
