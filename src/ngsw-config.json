@@ -17,7 +17,8 @@
       "urls":[
 
         "https://fonts.googleapis.com/css?family=Montserrat" ,
-        "https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"
+        "https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css",
+        "https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300"
       ]
     }
   }, {

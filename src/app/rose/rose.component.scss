@@ -34,6 +34,13 @@ $link-color: $accent;
 
   
 }
+.header{
+
+    grid-column:5/11;
+    grid-row:1/10;
+
+
+}
   .sidebar{
         
         background-color: $black;
@@ -46,4 +53,51 @@ $link-color: $accent;
         grid-column:1/ span 5;
         grid-row:8/span 11;
         height:20%;
+        z-index:101;
     }
+    .rosebody{
+
+        background-color: $white;
+        grid-column:2/span 5;
+        grid-row:5/9;
+        font-size:30px;
+        text-align:center;
+        z-index:100;
+
+    }
+    .two{
+            background-image: url('https://raw.githubusercontent.com/ohrha/portfolio/master/src/app/LOGO.jpg');
+            background-size: cover;
+            background-position: top left;
+            text-align:center;
+            font-family:'Montserrat';
+            font-size:30px;
+            color: $light-gray;
+            text-shadow: 0 0 3px rgba(0,0,0,0.5);
+            background-color:$black;
+            background-blend-mode:multiply;
+            transition: all ease-in-out 300ms;
+            position:relative;
+            &::before{
+
+                content:'';
+                display:block;
+                background: $black;
+                opacity:0.8;
+                position:absolute;
+                top:0;
+                left:0;
+                right:0;
+                bottom:0;
+
+            }
+            &:hover::before{
+
+               
+                opacity:0;
+                transition: all ease-in-out 300ms;
+                
+
+            }
+            
+        }
