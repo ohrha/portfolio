@@ -12,28 +12,34 @@ import { environment } from '../environments/environment';
 import { RoseComponent } from './rose/rose.component';
 import { HomeComponent } from './home/home.component';
 import { MusicComponent } from './music/music.component';
+import { ShopComponent } from './shop/shop.component';
 
 const appRoutes = [
-{ 
-  path:'music', component:  MusicComponent
-}
-,
-{ 
-  path:'rose', component:  RoseComponent
-}
-,{ 
-  path:'', component:  HomeComponent
-}
-//
+  {
+    path: 'shop', component: ShopComponent
+  }
+  ,
+  {
+    path: 'music', component: MusicComponent
+  }
+  ,
+  {
+    path: 'rose', component: RoseComponent
+  }
+  , {
+    path: '', component: HomeComponent
+  }
+  //
 ]
 ///
-                           
+
 @NgModule({
   declarations: [
     AppComponent,
     RoseComponent,
     HomeComponent,
-    MusicComponent
+    MusicComponent,
+    ShopComponent
   ],
   imports: [
     BrowserModule,
