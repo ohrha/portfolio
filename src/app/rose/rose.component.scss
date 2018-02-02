@@ -1,0 +1,49 @@
+$black: #353535;
+$gray: #4f4f4f;
+$medium-gray: #737373;
+$light-gray: #c4c4c4;
+$orange: #f96855;
+$white: #ffffff;
+
+/*Semantic Color Names */
+
+$accent: $orange;
+$body-background: $black;
+$menu-background: $gray;
+$main-font-color: $light-gray;
+$main-active-color: $light-gray;
+$menu-font-color: $medium-gray;
+$link-color: $accent;
+
+.main-content{
+
+    padding: 10%;
+    flex: 1 1 80%;
+    min-height: 100vh;
+
+}
+
+.portfolio{
+
+
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(6,1fr);
+    height:100%;
+    grid-gap:20px;
+
+  
+}
+  .sidebar{
+        
+        background-color: $black;
+        grid-row:1/span 5;
+        grid-column:1;
+    }
+      .rosefooter{
+        
+        background-color: $orange;
+        grid-column:1/ span 5;
+        grid-row:5/span 7;
+        height:20%;
+    }
