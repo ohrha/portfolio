@@ -29,6 +29,7 @@ $link-color: $accent;
     display:grid;
     grid-template-columns: repeat(10,2fr);
     grid-template-rows: repeat(10,4fr);
+    grid-auto-rows: minmax(100px, auto);
     height:100%;
     grid-gap:20px;
 
