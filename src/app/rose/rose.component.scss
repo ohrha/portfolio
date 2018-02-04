@@ -30,6 +30,7 @@ $link-color: $accent;
     grid-template-columns: repeat(10,2fr);
     grid-template-rows: repeat(10,2fr);
     grid-auto-rows: minmax(100px, auto);
+    grid-auto-columns: minmax(2fr,auto);
     height:100%;
     grid-gap:20px;
 
@@ -55,6 +56,14 @@ $link-color: $accent;
         grid-row:8/10;
         
         z-index:101;
+
+  
+    }
+    .githubicon{
+        
+       
+        box-shadow: 2px 2px 4px black;
+        
     }
     .rosebody{
 
@@ -69,6 +78,7 @@ $link-color: $accent;
     .h3styling{
          font-family:'Open Sans Condensed';
          font-size:30px;
+         overflow-wrap: break-word;
 
 
     }
@@ -77,6 +87,12 @@ $link-color: $accent;
         font-family:'Open Sans Condensed';
          font-size:17px;
     }
+       .styling2{
+
+        font-family:'Open Sans Condensed';
+         font-size:17px;
+    }
+
     .two{
             background-image: url('https://raw.githubusercontent.com/ohrha/portfolio/master/src/app/LOGO.jpg');
             background-size: cover;
@@ -111,6 +127,46 @@ $link-color: $accent;
 
             }
             
+        }
+                @media(max-width:700px){
+
+                    .two{
+                        height:700px;
+                        box-shadow: 2px 2px 3px;
+                    }
+            .styling2{
+                display:none;
+            }
+            .styling{
+                
+            }
+            .rosebody{
+
+            }
+             .rosefooter{
+        
+        background-color: $orange;
+        grid-column:1/ span 11;
+        grid-row:7/8;
+        
+        z-index:101;
+        box-shadow: 2px 2px 3px;
+
+  
+    }
+    .sidebar{
+        box-shadow: 1px 1px 1px;
+        grid-row:1/span 7;
+    }
+    .rosebody{
+
+        grid-column:2/span 5;
+        grid-row:2/span 6;
+    }
+    .githubicon{
+        position:pull-right;
+
+    }
         }
     /*    @media(max-width:800px){
 
