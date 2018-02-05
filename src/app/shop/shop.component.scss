@@ -296,7 +296,9 @@ grid-gap:10px;
 }
 
                     .footer{
-
+display:grid;
+grid-template-columns:repeat(10,1fr);
+grid-template-rows:repeat(10,1fr);
     grid-column:1/11;
     grid-row:4/5;
    
@@ -306,7 +308,8 @@ grid-gap:10px;
     opacity:1;
 }
                .innerfooter{
-               
+               grid-column:2/10;
+               grid-row:3/9;
                 padding:20px;
                 background-color:white;
                 z-index:3;
