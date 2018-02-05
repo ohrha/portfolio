@@ -3,54 +3,37 @@
  <div class="header">
     <p>JONNY DEEP</p>
   </div>
-  <div class = "body">
+  <div class = "body" #viewchild>
 <br>
   <br>
        <br>
         <br>
    <br>
-        
+        <div class ="selectionstitle">
         <p style="font-family:'Playfair Display'">Selections</p>
-     <div [ngClass]="{'audioplayerdissapearfirst':fadeOutMusicFirst}"class="audioplayer fader">
+        </div>
+     <div id="fader" [ngClass]="{'audioplayerdissapearfirst':fadeOutMusicFirst}"class="audioplayer fader">
      
 
         <p style="font-family:'Playfair Display'">Fire Eater</p>
 
-        <audio id="audiocontrols"controls>
+        <audio controls>
           <source src="/assets/fire eater.mp3" type="audio/mpeg"> 
         </audio>
         
 
       </div>
-           <div [ngClass]="{'audioplayerdissapearfirst':fadeOutMusicFirst}"class="audioplayer fader">
-        <p style="font-family:'Playfair Display'">A Moor</p>
-
-        <audio id="audiocontrols"controls>
-          <source src="/assets/ieatthefire.mp3" type="audio/mpeg"> 
-        </audio>
-        
-
-      </div>
-           <div [ngClass]="{'audioplayerdissapearfirst':fadeOutMusicFirst}"class="audioplayer fader">
-        <p style="font-family:'Playfair Display'">Cool Breeze</p>
-
-        <audio id="audiocontrols"controls>
-          <source src="/assets/ieatthefire.mp3" type="audio/mpeg"> 
-        </audio>
-        
-
-      </div>
-           <div [ngClass]="{'audioplayerdissapearfirst':fadeOutMusicFirst}"class="audioplayer fader">
+               <div id="fader2" [ngClass]="{'audioplayerdissapear':fadeOutMusic}"class = "audioplayer2 fader">
         <p style="font-family:'Playfair Display'">Fire Eater</p>
 
-        <audio id="audiocontrols"controls>
-          <source src="/assets/ieatthefire.mp3" type="audio/mpeg"> 
+        <audio controls>
+          <source src="/assets/ieatthefire.mp3" type="audio/mpeg"> Your browser does not support the audio element.
         </audio>
         
 
       </div>
-      <p>A tale of beauty, within suffering. Survival. The Suffocating sensation of unbearable weight, unbearable
-        pressure. The strong and silent gaze gained from it</p>
+        
+     
          <br>
        <br>
         <br>
@@ -76,7 +59,7 @@
  
    <div class="footer">
   <div class = "innerfooter">
-    <i class="fa fa-soundcloud"style="font-size:20px;" aria-hidden="true"></i>
+    <a  style="color:black;"href="https://soundcloud.com/jonnydeep"><i class="fa fa-soundcloud"style="font-size:20px;" aria-hidden="true"></i></a>
 
   </div>
   </div>
