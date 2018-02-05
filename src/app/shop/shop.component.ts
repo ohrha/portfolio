@@ -56,10 +56,10 @@ if(top<227){
   this.fadeOutMusicFirst = true;
 
 }
-if(rect.top>150){
+if(rect.top>160){
   this.fadeOutMusicFirst = false;
 }
-     if(rect2.top<150){
+     if(rect2.top<160){
   
 this.fadeOutMusic = true;
 }
