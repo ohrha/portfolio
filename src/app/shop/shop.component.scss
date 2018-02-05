@@ -27,6 +27,7 @@ $link-color: $accent;
     grid-auto-columns: minmax(2fr,auto);
     height:100%;
     grid-gap:20px;
+    
 
 }
 
@@ -55,7 +56,19 @@ $link-color: $accent;
     grid-column:2/10;
     grid-row:1/11;
     background-color:white;
+
     z-index:0;
+
+}
+.imagebody2{
+
+      grid-column: 1/5;
+    grid-row:3/4;
+    z-index:2;
+    text-align:center;
+background-color:black;
+opacity:1;
+overflow-y:auto;
 
 }
 .mainimage{
@@ -65,6 +78,7 @@ $link-color: $accent;
  background-image: url('https://i1.sndcdn.com/avatars-000034435323-1accqz-t500x500.jpg');
  background-size:cover;
  background-position:center;
+ background-attachment:fixed;
  
  z-index:0;
 }
