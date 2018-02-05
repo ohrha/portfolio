@@ -14,7 +14,14 @@ $main-font-color: $light-gray;
 $main-active-color: $light-gray;
 $menu-font-color: $medium-gray;
 $link-color: $accent;
+/*
+.container{
+       background-image: url('/assets/cleaved.jpg');
+            background-size: cover;
+            opacity:.4;
 
+}
+*/
 .main-content{
 
    padding:2% 10% 10% 10%;
@@ -27,11 +34,20 @@ $link-color: $accent;
     grid-auto-columns: minmax(2fr,auto);
     height:100%;
     grid-gap:20px;
+   
     
 
 }
 
+.footer{
 
+    grid-column:1/11;
+    grid-row:7/8;
+    background-color:black;
+    z-index:2;
+    text-align:center;
+    opacity:.6;
+}
 
 .header{
 
@@ -71,28 +87,74 @@ opacity:1;
 overflow-y:auto;
 
 }
+.mainimageborder{
+display:grid;
+grid-template-columns: repeat(10,1fr);
+grid-template-rows: repeat(10,1fr);
+grid-gap:10px;
+        grid-column: 1/5;
+    grid-row:1/3;
+    text-align:center;
+    z-index:-1;
+    border:2px solid #ddd
+
+}
 .mainimage{
+    display:grid;
+grid-template-columns: repeat(10,1fr);
+grid-template-rows: repeat(10,1fr);
+grid-gap:10px;
     grid-column: 1/5;
     grid-row:1/3;
     text-align:center;
- background-image: url('https://i1.sndcdn.com/avatars-000034435323-1accqz-t500x500.jpg');
- background-size:cover;
- background-position:center;
- background-attachment:fixed;
- 
- z-index:0;
+    z-index:0;
+    border:1px solid #ddd;
 }
 .imagebody{
-  grid-column: 1/5;
-    grid-row:1/3;
+    grid-column: 1/5;
+    grid-row:1/5;
+    display:grid;
+    grid-template-columns: repeat(10,1fr);
+    grid-template-rows: repeat(10,1fr);
+
+    grid-gap:10px;
+    border:1px solid #ddd;
     z-index:2;
-    text-align:center;
-background-color:white;
-opacity:.6;
-overflow-y:auto;
+    background-color:white;
+    opacity:.6;
 
 }
 .audioplayer{
+    grid-column:2/10;
+    grid-row:2/3;
+    text-align:center;
+    border:1px solid #ddd;
+    overflow-y:auto;
+    opacity:1;
+    transition:1s;
+    
+    
+}
+.audioplayerdissapearfirst{
+
+    opacity:0;
+    transition:1s;
+}
+.audioplayerdissapear{
+
+    opacity:0;
+    transition:1s;
+}
+
+
+.audioplayer2{
+    grid-column:2/10;
+    grid-row:4/3;
+    text-align:center;
+    border:1px solid #ddd;
+    overflow-y:auto;
+    
+    
     
 }
   .sidebar{
@@ -150,8 +212,7 @@ overflow-y:auto;
     }
 
     .two{
-            background-image: url('https://raw.githubusercontent.com/ohrha/portfolio/master/src/app/LOGO.jpg');
-            background-size: cover;
+     
             background-position: top left;
             text-align:center;
             font-family:'Montserrat';
@@ -195,47 +256,21 @@ overflow-y:auto;
             margin-top:60px;
 
         }
-        /*
+    
                 @media(max-width:700px){
 
-                    .two{
-                        height:700px;
-                        box-shadow: 2px 2px 3px;
-                    }
-            .styling2{
-                display:none;
-            }
-            .styling{
-                
-            }
-            .rosebody{
-
-            }
-             .rosefooter{
-        
-        background-color: $orange;
-        grid-column:1/ span 11;
-        grid-row:7/8;
-        
-        z-index:101;
-        box-shadow: 2px 2px 3px;
-
-  
-    }
-    .sidebar{
-        box-shadow: 1px 1px 1px;
-        grid-row:1/span 7;
-    }
-    .rosebody{
-
-        grid-column:2/span 5;
-        grid-row:2/span 6;
-    }
-    .githubicon{
-        position:pull-right;
-
-    }
+         .mainimage{
+    grid-column: 1/5;
+    grid-row:1/3;
+    text-align:center;
+ background-image: url('https://i1.sndcdn.com/avatars-000034435323-1accqz-t500x500.jpg');
+ background-size:cover;
+ background-position:center;
+ background-attachment:fixed;
+ 
+ z-index:0;
         }
+                }
     /*    @media(max-width:800px){
 
 
