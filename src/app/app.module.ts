@@ -15,6 +15,9 @@ import { MusicComponent } from './music/music.component';
 import { ShopComponent } from './shop/shop.component';
 
 const appRoutes = [
+   {
+    path: '', component: HomeComponent
+  },
   {
     path: 'shop', component: ShopComponent
   }
@@ -26,9 +29,7 @@ const appRoutes = [
   {
     path: 'rose', component: RoseComponent
   }
-  , {
-    path: '', component: HomeComponent
-  }
+  
   //
 ]
 ///

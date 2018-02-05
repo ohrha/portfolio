@@ -17,7 +17,7 @@ $link-color: $accent;
 
 .main-content{
 
-    padding: 10%;
+   padding:2% 10% 10% 10%;
     flex: 1 1 80%;
     min-height: 100vh;
 
@@ -48,6 +48,7 @@ $link-color: $accent;
         background-color: $black;
         grid-row:1/span 6;
         grid-column:1/5;
+         box-shadow: 2px 2px 3px;
     }
       .rosefooter{
         
@@ -56,6 +57,7 @@ $link-color: $accent;
         grid-row:8/10;
         
         z-index:101;
+        box-shadow: 2px 2px 3px;
 
   
     }
@@ -70,11 +72,13 @@ $link-color: $accent;
         background-color: $white;
         grid-column:2/span 5;
         grid-row:2/ span 7;
-        
+        box-shadow: 2px 2px 3px;
         text-align:center;
-        z-index:100;
+        z-index:102;
+        transition: .8s;
 
     }
+  
     .h3styling{
          font-family:'Open Sans Condensed';
          font-size:30px;
@@ -127,6 +131,17 @@ $link-color: $accent;
 
             }
             
+        }
+        .fa-github{
+
+            color:white !important;
+
+        }
+        #githublink{
+
+            position:absolute;
+            margin-top:60px;
+
         }
                 @media(max-width:700px){
 
