@@ -52,18 +52,18 @@ if(top<227){
       let rect2 =document.getElementById('fader2').getBoundingClientRect();
       console.log(rect.top)
       console.log(rect2.top)
-      if(rect.top<122){
+      if(rect.top<140){
   this.fadeOutMusicFirst = true;
 
 }
-if(rect.top>122){
+if(rect.top>140){
   this.fadeOutMusicFirst = false;
 }
-     if(rect2.top<111){
+     if(rect2.top<150){
   
 this.fadeOutMusic = true;
 }
-if(rect2.top>111){
+if(rect2.top>150){
   this.fadeOutMusic = false;
 }
 
