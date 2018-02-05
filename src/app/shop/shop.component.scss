@@ -14,23 +14,20 @@ $main-font-color: $light-gray;
 $main-active-color: $light-gray;
 $menu-font-color: $medium-gray;
 $link-color: $accent;
-/*
+
 .container{
-       background-image: url('/assets/cleaved.jpg');
-            background-size: cover;
-            opacity:.4;
 
 }
-*/
+
 .main-content{
 
    padding:2% 10% 10% 10%;
     flex: 1 1 80%;
     min-height: 100vh;
     display:grid;
-    grid-template-columns: repeat(10,2fr);
-    grid-template-rows: repeat(10,2fr);
-    grid-auto-rows: minmax(200px, auto);
+    grid-template-columns: repeat(10,1fr);
+    grid-template-rows: repeat(10,1fr);
+   /* grid-auto-rows: max(200px);*/
     grid-auto-columns: minmax(2fr,auto);
     height:100%;
     grid-gap:20px;
@@ -43,10 +40,11 @@ $link-color: $accent;
 
     grid-column:1/11;
     grid-row:7/8;
+   
     background-color:#ddd;
     z-index:2;
     text-align:center;
-    opacity:.6;
+    opacity:1;
 }
 
 .header{
@@ -67,19 +65,19 @@ $link-color: $accent;
 }
 .body{
     display:grid;
-    grid-template-columns:repeat(4,1fr);
-    grid-template-rows:repeat(4,1fr);
+    grid-template-columns:repeat(10,1fr);
+    grid-template-rows:repeat(10,1fr);
     grid-column:2/10;
-    grid-row:1/11;
+    grid-row:1/8;
     background-color:white;
-
+    border: 1px solid #ddd;
     z-index:0;
 
 }
 .imagebody2{
 
-      grid-column: 1/5;
-    grid-row:3/4;
+      grid-column: 2/10;
+    grid-row:2/10;
     z-index:2;
     text-align:center;
 background-color:black;
@@ -111,12 +109,13 @@ grid-gap:10px;
     border:1px solid #ddd;
 }
 .imagebody{
-    grid-column: 1/5;
-    grid-row:1/5;
+    grid-column: 2/10;
+    grid-row:2/10;
     display:grid;
     grid-template-columns: repeat(10,1fr);
     grid-template-rows: repeat(10,1fr);
-
+    grid-auto-rows:minmax(100px,auto);
+    text-align:center;
     grid-gap:10px;
     border:1px solid #ddd;
     z-index:2;
@@ -124,7 +123,12 @@ grid-gap:10px;
     opacity:.6;
 
 }
+#audiocontrols{
+
+    height:20px;
+}
 .audioplayer{
+  
     grid-column:2/10;
     grid-row:2/3;
     text-align:center;
@@ -149,7 +153,7 @@ grid-gap:10px;
 
 .audioplayer2{
     grid-column:2/10;
-    grid-row:4/3;
+    grid-row:3/4;
     text-align:center;
     border:1px solid #ddd;
     overflow-y:auto;
@@ -258,6 +262,98 @@ grid-gap:10px;
         }
     
                 @media(max-width:700px){
+                    .audioplayer{
+  
+ 
+    text-align:center;
+    border:1px solid #ddd;
+    overflow-y:auto;
+    opacity:1;
+    transition:1s;
+    
+    
+}
+.audioplayerdissapearfirst{
+
+    opacity:0;
+    transition:1s;
+}
+.audioplayerdissapear{
+
+    opacity:0;
+    transition:1s;
+}
+
+
+.audioplayer2{
+    
+    text-align:center;
+    border:1px solid #ddd;
+    overflow-y:auto;
+    
+    
+    
+}
+
+                    .footer{
+
+    grid-column:1/11;
+    grid-row:4/5;
+   
+    background-color:black;
+    z-index:2;
+    text-align:center;
+    opacity:1;
+}
+               .innerfooter{
+               
+                padding:20px;
+                background-color:white;
+                z-index:3;
+               }
+                    .main-content{
+
+   padding:2% 10% 10% 10%;
+    flex: 1 1 80%;
+    min-height: 100vh;
+    display:grid;
+    grid-template-columns: repeat(10,1fr);
+    grid-template-rows: repeat(10,1fr);
+   /* grid-auto-rows: max(200px);*/
+    grid-auto-columns: minmax(2fr,auto);
+    height:100%;
+    grid-gap:20px;
+   
+    
+
+}
+
+                    .body{
+   
+   
+    display:inline-block;
+    height:450px;
+    background-color:white;
+    border: 1px solid #ddd;
+    z-index:0;
+    overflow-y:auto;
+
+}
+                    .imagebody{
+    grid-column: 2/10;
+    grid-row:2/6;
+    display:grid;
+    grid-template-columns: repeat(10,1fr);
+    grid-template-rows: repeat(10,1fr);
+    grid-auto-rows:minmax(100px,auto);
+    text-align:center;
+    grid-gap:10px;
+    border:1px solid #ddd;
+    z-index:2;
+    background-color:white;
+    opacity:.6;
+
+}
 
          .mainimage{
     grid-column: 1/5;
