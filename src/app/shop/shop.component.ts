@@ -11,7 +11,7 @@ export class ShopComponent implements OnInit {
 fadeOutMusic:boolean = false;
 fadeOutMusicFirst:boolean = false;
 fadeOutMusicThird:boolean = false;
-descriptionReveal:boolean = true;
+descriptionReveal:boolean = false;
   @ViewChild('viewchild') div; 
 
   @HostListener('window:scroll', ['$event'])
@@ -81,12 +81,12 @@ if(rect3.top>150){
   this.fadeOutMusicThird = false;
 }
 
-    if(rect4.top>230){
+    if(rect4.top>250){
   
-//this.descriptionReveal = false;
+this.descriptionReveal = false;
 }
-if(rect4.top<140){
- // this.descriptionReveal= true;
+if(rect4.top<250){
+  this.descriptionReveal= true;
 }
     })
 
