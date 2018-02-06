@@ -156,7 +156,7 @@ grid-gap:10px;
 .audioplayer3{
     
     grid-column:2/10;
-    grid-row:5/6;
+    grid-row:7/8;
     text-align:center;
     border:1px solid #ddd;
     overflow-y:auto;
@@ -165,9 +165,8 @@ grid-gap:10px;
 }
 .description{
     grid-column:2/10;
-    grid-row:6/8;
+    grid-row:6/10;
     text-align:center;
-    border:1px solid #ddd;
     opacity:0;
     transition:1s;
 
@@ -386,7 +385,7 @@ grid-template-rows:repeat(10,1fr);
    font-family:'Playfair Display';
    text-align:center;
     display:inline-block;
-    height:450px;
+    height:400px;
     background-color:white;
     border: 1px solid #ddd;
     z-index:0;
