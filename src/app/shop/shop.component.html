@@ -1,4 +1,4 @@
-<div class ="container">
+
 <div class="main-content animated fadeIn">
  <div class="header">
     <p>JONNY DEEP</p>
@@ -15,24 +15,35 @@
      <div id="fader" [ngClass]="{'audioplayerdissapearfirst':fadeOutMusicFirst}"class="audioplayer fader">
      
 
-        <p style="font-family:'Playfair Display'">Fire Eater</p>
+    
+        
+  <p style="font-family:'Playfair Display'">Wood Of The Royal Forest</p>
+
+        <audio controls>
+          <source src="/assets/wood of the royal forest.mp3" type="audio/mpeg"> Your browser does not support the audio element.
+        </audio>
+      </div>
+               <div id="fader2" [ngClass]="{'audioplayerdissapear':fadeOutMusic}"class = "audioplayer2 fader">
+       <p style="font-family:'Playfair Display'">Fire Eater</p>
 
         <audio controls>
           <source src="/assets/fire eater.mp3" type="audio/mpeg"> 
         </audio>
-        
 
       </div>
-               <div id="fader2" [ngClass]="{'audioplayerdissapear':fadeOutMusic}"class = "audioplayer2 fader">
-        <p style="font-family:'Playfair Display'">Fire Eater</p>
+                 <div id="fader3" [ngClass]="{'audioplayerdissapearthird':fadeOutMusicThird}"class = "audioplayer3 fader">
+       <p style="font-family:'Playfair Display'">Cleaver</p>
 
         <audio controls>
-          <source src="/assets/ieatthefire.mp3" type="audio/mpeg"> Your browser does not support the audio element.
+          <source src="/assets/cleaver.mp3" type="audio/mpeg"> 
         </audio>
-        
+       
 
       </div>
-        
+         <div id="fader4" [ngClass]="{'descriptionreveal':descriptionReveal}" class = "description">
+          <p>Jonny Deep</p>
+          <p>A musical project.</p>
+        </div>
      
          <br>
        <br>
@@ -63,4 +74,3 @@
 
   </div>
   </div>
-</div>

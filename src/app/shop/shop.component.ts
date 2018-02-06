@@ -10,6 +10,8 @@ export class ShopComponent implements OnInit {
 
 fadeOutMusic:boolean = false;
 fadeOutMusicFirst:boolean = false;
+fadeOutMusicThird:boolean = false;
+descriptionReveal:boolean = false;
   @ViewChild('viewchild') div; 
 
   @HostListener('window:scroll', ['$event'])
@@ -50,8 +52,13 @@ if(top<227){
       console.log("iscrholloed")
       let rect=document.getElementById('fader').getBoundingClientRect();
       let rect2 =document.getElementById('fader2').getBoundingClientRect();
+      let rect3 =document.getElementById('fader3').getBoundingClientRect();
+            let rect4 =document.getElementById('fader4').getBoundingClientRect();
+
       console.log(rect.top)
       console.log(rect2.top)
+      console.log(rect3.top)
+      console.log(rect4.top);
       if(rect.top<150){
   this.fadeOutMusicFirst = true;
 
@@ -66,7 +73,20 @@ this.fadeOutMusic = true;
 if(rect2.top>150){
   this.fadeOutMusic = false;
 }
-
+    if(rect3.top<160){
+  
+this.fadeOutMusicThird = true;
+}
+if(rect3.top>150){
+  this.fadeOutMusicThird = false;
+}
+    if(rect4.top>230){
+  
+this.descriptionReveal = false;
+}
+if(rect4.top<140){
+  this.descriptionReveal= true;
+}
     })
 
     
