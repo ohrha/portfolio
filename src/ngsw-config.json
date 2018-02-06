@@ -7,7 +7,10 @@
       "files": [
         "/favicon.ico",
         "/index.html",
-        "/"
+        "/",
+        "/assets/cleaver.mp3",
+        "/assets/fire eater.mp3",
+        "/assets/wood of the royal forest.mp3"
       ],
       "versionedFiles": [
         "/*.bundle.css",
