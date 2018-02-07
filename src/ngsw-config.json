@@ -7,8 +7,8 @@
       "files": [
         "/favicon.ico",
         "/index.html",
-        "/",
-        "/assets/fire eater.mp3"
+        "/"
+        
       
       ],
       "versionedFiles": [
@@ -26,7 +26,7 @@
     }
   }, {
     "name": "assets",
-    "installMode": "lazy",
+    "installMode": "prefetch",
     "updateMode": "prefetch",
     "resources": {
       "files": [
