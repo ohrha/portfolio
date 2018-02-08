@@ -3,7 +3,7 @@ import { environment } from '../../environments/environment'
 @Injectable()
 export class ConfigService {
 
-private _config:any = environment.config
+private _config:any = environment.config;
 
   constructor() { }
 
@@ -11,5 +11,10 @@ private _config:any = environment.config
 get(key:any){
 
   return this._config[key];
+
+
 }
+
+
+
 }
