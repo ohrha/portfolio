@@ -16,7 +16,7 @@ export class AppComponent {
 
     if(this.swupdate.isEnabled){
 
-      if(this.swupdate.available.subscribe(()=>{
+      this.swupdate.available.subscribe(()=>{
 
         if(confirm("New Version Available. Load New Version")){
 
