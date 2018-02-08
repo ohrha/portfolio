@@ -10,9 +10,10 @@
     "icons": [
 
         {
-            "src":"/assets/icon.png",
-            "sizes":"512x512",
-            "type":"image/png"
+            "src":"/assets/jonndeep.png",
+            "sizes":"192x192",
+            "type":"image/png",
+            "density": "4.0"
 
         }
 
