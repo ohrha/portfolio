@@ -48,10 +48,10 @@ const appRoutes = [
     BrowserModule,
     AppRoutingModule,
     ServiceWorkerModule.register('/ngsw-worker.js', { enabled: environment.production }),
-    RouterModule.forRoot(appRoutes),
-    ConfigService
+    RouterModule.forRoot(appRoutes)
+    
   ],
-  providers: [],
+  providers: [ConfigService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
