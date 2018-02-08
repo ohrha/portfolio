@@ -18,7 +18,8 @@ export class AppComponent {
   ngOnInit(){
     this.VAPID_PUBLIC_KEY = this.configservice.get('VAPID_PUBLIC_KEY')
     
-    this.subscribeToPush();
+    //this.subscribeToPush();
+
     if(this.swupdate.isEnabled){
 
       this.swupdate.available.subscribe(()=>{
