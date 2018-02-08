@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {HostListener,ViewChild } from '@angular/core';
-
+import { ServiceWorkerModule } from '@angular/service-worker';
 @Component({
   selector: 'app-shop',
   templateUrl: './shop.component.html',
@@ -43,7 +43,7 @@ if(top<227){
 }
   }
 
-  constructor() { }
+  constructor( private serviceworker:ServiceWorkerModule) { }
   ngAfterViewInit(){
 
     console.log(this.div.nativeElement);
@@ -94,7 +94,7 @@ if(rect4.top<250){
   }
   ngOnInit() {
    
-    
+    console.log(this.serviceworker)
   }
 
 }
