@@ -1,5 +1,10 @@
 
 {
+   "push": {
+    "showNotifications": true,
+    "backgroundOnly": false
+  }
+,
   "routing": {
     "index": "/index.html",
     "routes": {

@@ -24,14 +24,42 @@
         "https://fonts.googleapis.com/css?family=Playfair+Display"
       ]
     }
-  }, {
+  }, 
+  {
     "name": "assets",
     "installMode": "prefetch",
     "updateMode": "prefetch",
     "resources": {
+
       "files": [
         "/assets/**"
       ]
     }
-  }]
+  }],
+
+
+
+
+
+  "dataGroups":[
+
+    {
+      "name": "messages",
+      "urls":[
+        "http://localhost:3000/routes/notification"
+      ],
+      "cacheConfig": {
+        "strategy": "freshness",
+        "maxSize": 100,
+        "maxAge": "3d",
+        "timeout": "10s"
+      }
+    }
+    ]
+    
+
+  
+
+
 }
+

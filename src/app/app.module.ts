@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { RouterModule, Routes, ActivatedRoute, Params } from '@angular/router';
+import { HttpModule } from '@angular/http'
 
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { AppComponent } from './app.component';
@@ -15,6 +16,7 @@ import { MusicComponent } from './music/music.component';
 import { ShopComponent } from './shop/shop.component';
 
 import { ConfigService }  from './services/config.service';
+import { PushService } from './services/push.service';
 
 const appRoutes = [
    {
@@ -48,10 +50,11 @@ const appRoutes = [
     BrowserModule,
     AppRoutingModule,
     ServiceWorkerModule.register('/ngsw-worker.js', { enabled: environment.production }),
-    RouterModule.forRoot(appRoutes)
+    RouterModule.forRoot(appRoutes),
+    HttpModule,
     
   ],
-  providers: [ConfigService],
+  providers: [ConfigService,PushService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

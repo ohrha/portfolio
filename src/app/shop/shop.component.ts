@@ -1,6 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import {HostListener,ViewChild } from '@angular/core';
 import { ServiceWorkerModule } from '@angular/service-worker';
+import { SwPush } from '@angular/service-worker';
+import { ConfigService } from '../services/config.service';
+import { PushService } from '../services/push.service'; 
 
 @Component({
   selector: 'app-shop',
@@ -8,7 +11,7 @@ import { ServiceWorkerModule } from '@angular/service-worker';
   styleUrls: ['./shop.component.scss']
 })
 export class ShopComponent implements OnInit {
-
+  private VAPID_PUBLIC_KEY: string;
 fadeOutMusic:boolean = false;
 fadeOutMusicFirst:boolean = false;
 fadeOutMusicThird:boolean = false;
@@ -44,7 +47,7 @@ if(top<227){
 }
   }
 
-  constructor( private serviceworker:ServiceWorkerModule) { }
+  constructor(private swPush:SwPush,private configService:ConfigService, private pushService:PushService, private serviceworker:ServiceWorkerModule) { }
   ngAfterViewInit(){
 
     console.log(this.div.nativeElement);
@@ -94,8 +97,31 @@ if(rect4.top<250){
     
   }
   ngOnInit() {
-   
-    console.log(this.serviceworker)
-  }
 
+   this.pushService.retrieveNotification().subscribe(data=>{
+
+    console.log(data)
+
+   })
+
+    console.log(this.serviceworker)
+    console.log(this.configService.get('VAPID_PUBLIC_KEY'));
+    console.log("HELLo")
+  }
+  
+subscribeToPush() {
+
+    // Requesting messaging service to subscribe current client (browser)
+    this.swPush.requestSubscription({
+      serverPublicKey: this.VAPID_PUBLIC_KEY
+    })
+      .then(pushSubscription => {
+
+        // Passing subscription object to our backend
+        this.pushService.addSubscriber(pushSubscription);
+ 
+          })
+     
+
+  }
 }
