@@ -14,6 +14,8 @@ import { HomeComponent } from './home/home.component';
 import { MusicComponent } from './music/music.component';
 import { ShopComponent } from './shop/shop.component';
 
+import { ConfigService }  from './services/config.service';
+
 const appRoutes = [
    {
     path: '', component: HomeComponent
@@ -46,7 +48,8 @@ const appRoutes = [
     BrowserModule,
     AppRoutingModule,
     ServiceWorkerModule.register('/ngsw-worker.js', { enabled: environment.production }),
-    RouterModule.forRoot(appRoutes)
+    RouterModule.forRoot(appRoutes),
+    ConfigService
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {HostListener,ViewChild } from '@angular/core';
 import { ServiceWorkerModule } from '@angular/service-worker';
+
 @Component({
   selector: 'app-shop',
   templateUrl: './shop.component.html',
