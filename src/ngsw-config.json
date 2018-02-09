@@ -46,7 +46,7 @@
     {
       "name": "messages",
       "urls":[
-        "http://localhost:3000/routes/notification"
+        "routes/notification"
       ],
       "cacheConfig": {
         "strategy": "freshness",
