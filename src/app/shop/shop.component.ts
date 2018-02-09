@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {HostListener,ViewChild } from '@angular/core';
+import { Observable } from 'rxjs/Observable';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { SwPush } from '@angular/service-worker';
 import { ConfigService } from '../services/config.service';
@@ -107,20 +108,34 @@ if(rect4.top<250){
     console.log(this.serviceworker)
     console.log(this.configService.get('VAPID_PUBLIC_KEY'));
     console.log("HELLo")
+    this.VAPID_PUBLIC_KEY = this.configService.get('VAPID_PUBLIC_KEY')
   }
   
 subscribeToPush() {
 
+console.log("clicked")
     // Requesting messaging service to subscribe current client (browser)
     this.swPush.requestSubscription({
       serverPublicKey: this.VAPID_PUBLIC_KEY
     })
       .then(pushSubscription => {
-
+        console.log("hello")
         // Passing subscription object to our backend
-        this.pushService.addSubscriber(pushSubscription);
- 
-          })
+        this.pushService.addSubscriber(pushSubscription)
+          .subscribe(
+
+          res => {
+            console.log('[App] Add subscriber request answer', res)
+
+      
+            });
+          },
+          err => {
+            console.log('[App] Add subscriber request failed', err)
+          }
+
+          )
+     
      
 
   }
