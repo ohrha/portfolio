@@ -27,7 +27,7 @@ export class PushService {
 
     let headers = new Headers();
     headers.append('Content-type', 'application/json');
-    return this.http.get('http://localhost:3000/routes/notification',{headers:headers})
+    return this.http.get('routes/notification',{headers:headers})
     .map(res=>res.json())
     
 
@@ -35,7 +35,7 @@ export class PushService {
 
   addSubscriber(subscription) {
 
-    const url = `http://localhost:3000/routes/webpush`;
+    const url = `routes/webpush`;
     console.log('[Push Service] Adding subscriber')
     console.log(subscription)
     
