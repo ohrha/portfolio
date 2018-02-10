@@ -49,6 +49,18 @@ let body={
   .map(res => res.json());
 
 }
+  sendServiceWorkerNotActiveNotification(subscription){
+
+let body={
+    subscription:subscription
+}
+  let headers = new Headers()
+  headers.append('Content-Type','application/json')
+  return this.http.post('routes/serviceworkernotactive',body,{headers:headers})
+  .map(res => res.json());
+
+}
+
 subscribeToPush(){
 
         this.swPush.requestSubscription({

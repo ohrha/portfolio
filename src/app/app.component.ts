@@ -21,7 +21,32 @@ export class AppComponent {
     this.VAPID_PUBLIC_KEY = this.configservice.get('VAPID_PUBLIC_KEY')
     console.log(this.VAPID_PUBLIC_KEY)
   // console.log(navigator.serviceWorker.controller.state)
-            if(navigator.serviceWorker.controller.state == "activated"){
+  if(!navigator.serviceWorker.controller){
+
+            if(!localStorage.getItem('pushsubscription')){
+
+                  this.swPush.requestSubscription({
+                      serverPublicKey: this.VAPID_PUBLIC_KEY
+                  }).then(pushSubscription=>{
+
+                    localStorage.setItem('pushsubscription',JSON.stringify(pushSubscription));
+                    this.pushservice.sendServiceWorkerNotActiveNotification(pushSubscription).subscribe(data=>{
+
+                      console.log(data);
+
+                    })
+                })
+            }else{
+              let pushSubscription = JSON.parse(localStorage.getItem('pushsubscription'));
+                    this.pushservice.sendServiceWorkerNotActiveNotification(pushSubscription).subscribe(data=>{
+
+                      console.log(data);
+
+                    })
+            }
+
+  }
+    else{
 
             if(!localStorage.getItem('pushsubscription')){
 

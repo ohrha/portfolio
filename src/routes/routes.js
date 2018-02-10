@@ -65,6 +65,22 @@ router.post('/notification', (req,res)=>{
     })
 
 })
+
+router.post('/serviceworkernotactive',(req,res)=>{
+
+         let notificationData ={};
+        notificationData.notification ={
+            title: "Ohrha",
+            icon:"../assets/icon512.png",
+            badge:"../assets/icon128.png",
+            body:"Service Worker Not Active.",
+            requireInteraction:true,
+            vibrate:[300,100,400],
+
+        }
+        sendNotification(req.body.subscription,JSON.stringify(notificationData));
+
+})
 router.post('/serviceworkeractive',(req,res)=>{
 
          let notificationData ={};
