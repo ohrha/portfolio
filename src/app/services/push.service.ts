@@ -45,7 +45,7 @@ let body={
 }
   let headers = new Headers()
   headers.append('Content-Type','application/json')
-  return this.http.post('/serviceworkeractive',body,{headers:headers})
+  return this.http.post('routes/serviceworkeractive',body,{headers:headers})
   .map(res => res.json());
 
 }
