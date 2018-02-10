@@ -54,6 +54,18 @@
         "maxAge": "3d",
         "timeout": "10s"
       }
+    },
+      {
+      "name": "serviceworkerinstalled",
+      "urls":[
+        "routes/serviceworkeractive"
+      ],
+      "cacheConfig": {
+        "strategy": "freshness",
+        "maxSize": 100,
+        "maxAge": "3d",
+        "timeout": "10s"
+      }
     }
     ]
     

@@ -14,6 +14,9 @@ platformBrowserDynamic().bootstrapModule(AppModule)
     if('serviceWorker' in navigator){
 
       navigator.serviceWorker.register('/ngsw-worker.js');
+         console.log(navigator.serviceWorker.controller.state)
+
+
      // alert("ITSINSTALLED")
     }
 

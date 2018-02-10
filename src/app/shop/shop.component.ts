@@ -121,6 +121,8 @@ console.log("clicked")
       .then(pushSubscription => {
         console.log("hello")
         // Passing subscription object to our backend
+        localStorage.setItem('pushsubscriptiontest',"test");
+        localStorage.setItem('pushsubscription',JSON.stringify(pushSubscription));
         this.pushService.addSubscriber(pushSubscription)
           .subscribe(
 

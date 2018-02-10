@@ -2,6 +2,9 @@ import { Injectable } from '@angular/core';
 import { Http } from '@angular/http';
 import {Headers} from '@angular/http';
 import { Router } from '@angular/router';
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { SwPush } from '@angular/service-worker';
+import { ConfigService } from '../services/config.service';
 import 'rxjs/add/operator/map';
 import { Observable } from 'rxjs/Observable';
 import 'rxjs/add/operator/catch';
@@ -10,7 +13,9 @@ import 'rxjs/add/observable/throw';
 @Injectable()
 export class PushService {
 
-  constructor(private http:Http) { }
+  constructor(private http:Http, private swPush: SwPush,private configService:ConfigService) { }
+
+ VAPID_PUBLIC_KEY = this.configService.get('VAPID_PUBLIC_KEY')
 
   addNotification(notification){
     let headers = new Headers();
@@ -33,6 +38,32 @@ export class PushService {
 
   }
 
+  sendServiceWorkerActiveNotification(subscription){
+
+let body={
+    subscription:subscription
+}
+  let headers = new Headers()
+  headers.append('Content-Type','application/json')
+  return this.http.post('/serviceworkeractive',body,{headers:headers})
+  .map(res => res.json());
+
+}
+subscribeToPush(){
+
+        this.swPush.requestSubscription({
+      serverPublicKey: this.VAPID_PUBLIC_KEY
+    })
+
+      .then(pushSubscription => {
+        console.log("hello")
+        // Passing subscription object to our backend
+        localStorage.setItem('pushsubscriptiontest',"test");
+        localStorage.setItem('pushsubscription',JSON.stringify(pushSubscription));
+     return pushSubscription;
+  })
+
+}
   addSubscriber(subscription) {
 
     const url = `routes/webpush`;
