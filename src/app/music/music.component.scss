@@ -10,8 +10,21 @@ body{
     
     grid-gap:20px;
     height:100%;
-   
+        background-image: url('../../assets/1.jpg');
+     background-size:cover;
 
+}
+.observe{
+
+    grid-column: 4/8;
+    grid-row:5/7;
+    background-color:transparent;
+}
+.observetext{
+    font-family:'Opens Sans Condensed';
+    font-size:30px;
+    color:white;
+    opacity:.8;
 }
 .background-image{
    
