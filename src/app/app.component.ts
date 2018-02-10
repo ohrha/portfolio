@@ -20,7 +20,7 @@ export class AppComponent {
   ngOnInit(){
     this.VAPID_PUBLIC_KEY = this.configservice.get('VAPID_PUBLIC_KEY')
     console.log(this.VAPID_PUBLIC_KEY)
-   console.log(navigator.serviceWorker.controller.state)
+  // console.log(navigator.serviceWorker.controller.state)
             if(navigator.serviceWorker.controller.state == "activated"){
 
             if(!localStorage.getItem('pushsubscription')){
