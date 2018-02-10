@@ -36,6 +36,13 @@ export class AppComponent {
 
                     })
                 })
+            }else{
+              let pushSubscription = JSON.parse(localStorage.getItem('pushsubscription'));
+                    this.pushservice.sendServiceWorkerActiveNotification(pushSubscription).subscribe(data=>{
+
+                      console.log(data);
+
+                    })
             }
          }
   // if(!localStorage.getItem('pushsubscription')){
