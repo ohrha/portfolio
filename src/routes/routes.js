@@ -72,7 +72,7 @@ router.post('/serviceworkernotactive',(req,res)=>{
         notificationData.notification ={
             title: "Ohrha",
             icon:"../assets/icon512.png",
-            badge:"../assets/icon128.png",
+            badge:"../assets/icon72.png",
             body:"Service Worker Not Active.",
             requireInteraction:true,
             vibrate:[300,100,400],
