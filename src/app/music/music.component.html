@@ -3,9 +3,10 @@
 
 
 
-<div class="animated fadeIn" [ngClass]="{'background-image':backgroundImageShow,'background-image-hide':!backgroundImageShow}">
+<div *ngIf="backgroundImageShow"class="animated fadeIn background-image" >
+    
 </div>
-<div class="animated fadeIn"  [ngClass]="{'background-image2':backgroundImageShow2,'background-image2-hide':!backgroundImageShow2}">
+<div *ngIf ="backgroundImageShow2"class="animated fadeIn background-image2"  >
 </div>
 
 
