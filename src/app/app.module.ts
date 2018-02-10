@@ -17,6 +17,7 @@ import { ShopComponent } from './shop/shop.component';
 
 import { ConfigService }  from './services/config.service';
 import { PushService } from './services/push.service';
+import { FilmComponent } from './film/film.component';
 
 const appRoutes = [
    {
@@ -32,6 +33,9 @@ const appRoutes = [
   ,
   {
     path: 'rose', component: RoseComponent
+  },
+  {
+    path: 'film', component: FilmComponent
   }
   
   //
@@ -44,7 +48,8 @@ const appRoutes = [
     RoseComponent,
     HomeComponent,
     MusicComponent,
-    ShopComponent
+    ShopComponent,
+    FilmComponent
   ],
   imports: [
     BrowserModule,
