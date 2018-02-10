@@ -1,3 +1,6 @@
+body{
+    background-color:black;
+}
 .main-content{
 
     display:grid;
@@ -16,7 +19,9 @@
     grid-row:1/11;
 
      background-image: url('../../assets/n20.jpg');
-     background-size:cover;
+     background-size:contain;
+     background-repeat:no-repeat;
+     background-position:center;
      opacity:1;
      transition:1s;
    /* background-size: contain;
@@ -42,7 +47,10 @@
     grid-row:1/11;
 
      background-image: url('../../assets/74.jpg');
-     background-size:cover;
+     background-size:contain;
+     background-repeat:no-repeat;
+     background-position:center;
+
      opacity:1;
      transition:1s;
 
