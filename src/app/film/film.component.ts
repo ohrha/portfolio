@@ -8,9 +8,19 @@ import { Component, OnInit } from '@angular/core';
 export class FilmComponent implements OnInit {
 
   constructor() { }
-
+playPromise:any;
   ngOnInit() {
-   document.getElementById('bgvid').click()
+  this.playPromise= document.querySelector('video').play();
+  if(this.playPromise!== undefined){
+  
+ this. playPromise.then(function() {
+    // Automatic playback started!
+  }).catch(function(error) {
+    // Automatic playback failed.
+    // Show a UI element to let the user manually start playback.
+  });
+
+  }
   }
 
 }
