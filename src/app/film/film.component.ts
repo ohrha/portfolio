@@ -10,6 +10,7 @@ export class FilmComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+   document.getElementById('bgvid').click()
   }
 
 }
