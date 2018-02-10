@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class MusicComponent implements OnInit {
 
   constructor() { }
-  backgroundImageShow=true;
+  backgroundImageShow=false;
   backgroundImageHide=false;
   backgroundImageShow2 = false;
   backgroundImageShow2Hide=false;
