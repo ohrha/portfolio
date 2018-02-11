@@ -38,6 +38,9 @@ const appRoutes = [
   {
     path: 'film', component: FilmComponent
   }
+  ,{
+    path:'photography', component: PhotographyComponent
+  }
   
   //
 ]
