@@ -44,60 +44,53 @@ console.log("hello")
     }
        else if(this.index == 2){
 
-      this.backgroundImageShow2 = true;
-      this.backgroundImageShow = false;
+      this.backgroundImageShow3 = true;
+      this.backgroundImageShow2 = false;
       this.index=3
       console.log(this.backgroundImageShow2);
       console.log(this.index)
     }
        else if(this.index == 3){
 
-      this.backgroundImageShow3 = true;
-      this.backgroundImageShow2 = false;
+      this.backgroundImageShow4 = true;
+      this.backgroundImageShow3 = false;
       this.index=4
       console.log(this.backgroundImageShow2);
       console.log(this.index)
     }
        else if(this.index == 4){
 
-      this.backgroundImageShow4 = true;
-      this.backgroundImageShow3 = false;
+      this.backgroundImageShow5 = true;
+      this.backgroundImageShow4 = false;
       this.index=5
       console.log(this.backgroundImageShow2);
       console.log(this.index)
     }
        else if(this.index == 5){
 
-      this.backgroundImageShow5 = true;
-      this.backgroundImageShow4 = false;
+      this.backgroundImageShow6 = true;
+      this.backgroundImageShow5 = false;
       this.index=6
       console.log(this.backgroundImageShow2);
       console.log(this.index)
     }
        else if(this.index == 6){
 
-      this.backgroundImageShow6 = true;
-      this.backgroundImageShow5 = false;
+      this.backgroundImageShow7 = true;
+      this.backgroundImageShow6 = false;
       this.index=7
       console.log(this.backgroundImageShow2);
       console.log(this.index)
+
     }
            else if(this.index == 7){
-
-      this.backgroundImageShow7 = true;
-      this.backgroundImageShow6 = false;
-      this.index=8
-      console.log(this.backgroundImageShow2);
-      console.log(this.index)
-    }
-               else if(this.index == 8){
-
-      //this.backgroundImageShow = true;
+     //this.backgroundImageShow = true;
       this.backgroundImageShow7 = false;
       this.index=0
       console.log(this.backgroundImageShow2);
       console.log(this.index)
-    }
+    }////////////////////////
+         
 
   }
 
