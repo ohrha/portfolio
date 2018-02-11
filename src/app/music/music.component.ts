@@ -18,7 +18,7 @@ export class MusicComponent implements OnInit {
   backgroundImageShow7 = false;
   
   backgroundImageShow2Hide=false;
-  index=0;
+  index=4;
 
   ngOnInit() {
   }
