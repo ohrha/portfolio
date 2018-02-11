@@ -18,6 +18,7 @@ import { ShopComponent } from './shop/shop.component';
 import { ConfigService }  from './services/config.service';
 import { PushService } from './services/push.service';
 import { FilmComponent } from './film/film.component';
+import { PhotographyComponent } from './photography/photography.component';
 
 const appRoutes = [
    {
@@ -49,7 +50,8 @@ const appRoutes = [
     HomeComponent,
     MusicComponent,
     ShopComponent,
-    FilmComponent
+    FilmComponent,
+    PhotographyComponent
   ],
   imports: [
     BrowserModule,
