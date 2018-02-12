@@ -1,405 +1,60 @@
-$black: #353535;
-$gray: #4f4f4f;
-$medium-gray: #737373;
-$light-gray: #c4c4c4;
-$orange: #f96855;
-$white: #ffffff;
-
-/*Semantic Color Names */
-
-$accent: $orange;
-$body-background: $black;
-$menu-background: $gray;
-$main-font-color: $light-gray;
-$main-active-color: $light-gray;
-$menu-font-color: $medium-gray;
-$link-color: $accent;
-
-.main-content{
-
-   padding:2% 10% 10% 10%;
-    flex: 1 1 80%;
-    min-height: 100vh;
-
-}
-
-.portfolio{
+.main-container{
 
 
-    display:grid;
-    grid-template-columns: repeat(10,1fr);
-    grid-template-rows: repeat(10,1fr);
-    grid-auto-rows: minmax(100px, auto);
-    grid-auto-columns: minmax(1fr,auto);
-    height:100%;
-    grid-gap:20px;
-
-  
+display:grid;
+grid-template-columns:repeat(10,1fr);
+grid-template-rows:repeat(10,1fr);
+grid-auto-rows:(100px,auto);
+grid-gap:20px;
+height:100%;
+background-image:url('https://github.com/ohrha/ROSE/raw/master/src/assets/img/Home%20Page.jpg');
+background-size:cover;
+background-repeat:no-repeat;
+background-position:center;
 }
 .header{
 
-    grid-column:5/11;
-    grid-row:1/10;
-
-
-}
-  .sidebar{
-        
-        background-color: $black;
-        grid-row:1/span 6;
-        grid-column:1/5;
-         box-shadow: 2px 2px 3px;
-    }
-      .rosefooter{
-        
-        background-color: $orange;
-        grid-column:1/ span 11;
-        grid-row:8/10;
-        
-        z-index:101;
-        box-shadow: 2px 2px 3px;
-
-  
-    }
-    .githubicon{
-        
-       
-        box-shadow: 2px 2px 4px black;
-        
-    }
-    .rosebody{
-
-        background-color: $white;
-        grid-column:2/span 5;
-        grid-row:2/ span 7;
-        box-shadow: 2px 2px 3px;
-        text-align:center;
-        z-index:102;
-        transition: .8s;
-
-    }
-  
-    .h3styling{
-         font-family:'Open Sans Condensed';
-         font-size:30px;
-         overflow-wrap: break-word;
-
-
-    }
-    .styling{
-
-        font-family:'Open Sans Condensed';
-         font-size:17px;
-    }
-       .styling2{
-
-        font-family:'Open Sans Condensed';
-         font-size:17px;
-    }
-
-    .two{
-            background-image: url('https://raw.githubusercontent.com/ohrha/portfolio/master/src/app/LOGO.jpg');
-            background-size: cover;
-            background-position: top left;
-            text-align:center;
-            font-family:'Montserrat';
-            font-size:30px;
-            color: $light-gray;
-            text-shadow: 0 0 3px rgba(0,0,0,0.5);
-            background-blend-mode:multiply;
-            transition: all ease-in-out 300ms;
-            position:relative;
-            &::before{
-
-                content:'';
-                display:block;
-                background: $black;
-                opacity:.2;
-                position:absolute;
-                top:0;
-                left:0;
-                right:0;
-                bottom:0;
-
-            }
-            &:hover::before{
-
-               
-                opacity:0;
-                transition: all ease-in-out 300ms;
-                
-
-            }
-            
-        }
-        .fa-github{
-
-            color:white !important;
-
-        }
-        #githublink{
-
-            position:absolute;
-            margin-top:60px;
-
-        }
-                @media(max-width:700px){
-
-                    .two{
-                        height:700px;
-                        box-shadow: 2px 2px 3px;
-                    }
-            .styling2{
-                display:none;
-            }
-            .styling{
-                
-            }
-            .rosebody{
-                 grid-column:2/span 11;
-        grid-row:2/ span 7;
-
-            }
-             .rosefooter{
-        
-        background-color: $orange;
-        grid-column:1/ span 11;
-        grid-row:7/8;
-        
-        z-index:103;
-        box-shadow: 2px 2px 3px;
-
-  
-    }
-    .sidebar{
-        box-shadow: 1px 1px 1px;
-        grid-row:1/span 7;
-    }
-    .rosebody{
-
-        grid-column:2/span 5;
-        grid-row:2/span 6;
-    }
-    .githubicon{
-        position:pull-right;
-
-    }
-        }
-    /*    @media(max-width:800px){
-
-
-
-
-.main-content{
-
-    padding: 10%;
-    flex: 1 1 80%;
-    min-height: 100vh;
+    grid-column:1/11;
+    grid-row:2/3;
+    border:1px solid black;
+    background-color:white;
 
 }
+.body{
 
-.portfolio{
-
-
+    grid-column:1/9;
+    grid-row:3/10;
     display:grid;
-    grid-template-columns: repeat(5,2fr);
-    grid-template-rows: repeat(5,4fr);
-    grid-auto-rows: minmax(100px, auto);
-    height:100%;
-    grid-gap:20px;
-
-  
-}
-.header{
-
-    grid-column:5/11;
-    grid-row:1/10;
+    grid-template-columns:repeat(10,1fr);
+    grid-template-rows:repeat(10,1fr);
+    grid-gap:5px;
+    border:1px solid black;
+    background-color:rgba(239, 234, 236,.6);
 
 
 }
-  .sidebar{
-        
-        background-color: $black;
-        grid-row:1/span 9;
-        grid-column:1/5;
-    }
-      .rosefooter{
-        
-        background-color: $orange;
-        grid-column:1/ span 5;
-        grid-row:9/span 11;
-        height:20%;
-        z-index:101;
-    }
-    .rosebody{
+.body-description{
 
-        background-color: $white;
-        grid-column:2/span 5;
-        grid-row:5/9;
-        
-        text-align:center;
-        z-index:100;
-
-    }
-    .h3styling{
-         font-family:'Open Sans Condensed';
-         font-size:30px;
+    grid-column:2/10;
+    grid-row:2/10;
+    border:1px solid black;
+    background-color:rgba(255, 204, 226,.4);
+    box-shadow:2px 2px 2px black;
+}
+@media(max-width:650px){
+.main-container{
 
 
-    }
-    .styling{
-
-        font-family:'Open Sans Condensed';
-         font-size:17px;
-    }
-    .two{
-            background-image: url('https://raw.githubusercontent.com/ohrha/portfolio/master/src/app/LOGO.jpg');
-            background-size: cover;
-            background-position: top left;
-            text-align:center;
-            font-family:'Montserrat';
-            font-size:30px;
-            color: $light-gray;
-            text-shadow: 0 0 3px rgba(0,0,0,0.5);
-            background-color:$black;
-            background-blend-mode:multiply;
-            transition: all ease-in-out 300ms;
-            position:relative;
-            &::before{
-
-                content:'';
-                display:block;
-                background: $black;
-                opacity:0.8;
-                position:absolute;
-                top:0;
-                left:0;
-                right:0;
-                bottom:0;
-
-            }
-            &:hover::before{
-
-               
-                opacity:0;
-                transition: all ease-in-out 300ms;
-                
-
-            }
-            
-        }
-
-
-
-
-        }
-           @media(max-width:350px){
-
-
-
-
-.main-content{
-
-    padding: 10%;
-    flex: 1 1 80%;
-    min-height: 100vh;
-
+display:grid;
+grid-template-columns:repeat(10,1fr);
+grid-template-rows:repeat(10,1fr);
+grid-auto-rows:(100px,auto);
+grid-gap:20px;
+height:100%;
+background-image:url('/assets/rsehomesml.jpg');
+background-size:cover;
+background-repeat:no-repeat;
+background-position:center;
 }
 
-.portfolio{
-
-
-    display:grid;
-    grid-template-columns: repeat(2,2fr);
-    grid-template-rows: repeat(2,3fr);
-    grid-auto-rows: minmax(100px, auto);
-    height:100%;
-    grid-gap:20px;
-
-  
 }
-.header{
-
-    grid-column:5/11;
-    grid-row:1/10;
-
-
-}
-  .sidebar{
-        
-        background-color: $black;
-        grid-row:1/span 5;
-        grid-column:1/5;
-    }
-      .rosefooter{
-        
-        background-color: $orange;
-        grid-column:1/ span 5;
-        grid-row:7/span 11;
-        height:20%;
-        z-index:101;
-    }
-    .rosebody{
-
-        background-color: $white;
-        grid-column:1/span 5;
-        grid-row:1/9;
-        
-        text-align:center;
-        z-index:100;
-
-    }
-    .h3styling{
-         font-family:'Open Sans Condensed';
-         font-size:30px;
-
-
-    }
-    .styling{
-
-        font-family:'Open Sans Condensed';
-         font-size:17px;
-    }
-    .two{
-            background-image: url('https://raw.githubusercontent.com/ohrha/portfolio/master/src/app/LOGO.jpg');
-            background-size: cover;
-            background-position: top left;
-            text-align:center;
-            font-family:'Montserrat';
-            font-size:30px;
-            color: $light-gray;
-            text-shadow: 0 0 3px rgba(0,0,0,0.5);
-            height:100%;
-            background-color:$black;
-            background-blend-mode:multiply;
-            transition: all ease-in-out 300ms;
-            position:relative;
-            &::before{
-
-                content:'';
-                display:block;
-                background: $black;
-                opacity:0.8;
-                position:absolute;
-                top:0;
-                left:0;
-                right:0;
-                bottom:0;
-
-            }
-            &:hover::before{
-
-               
-                opacity:0;
-                transition: all ease-in-out 300ms;
-                
-
-            }
-            
-        }
-
-
-
-
-        }
-        */
