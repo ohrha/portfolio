@@ -35,17 +35,17 @@ export class MusicComponent implements OnInit {
         this.fadeOutMusicFirst = true;
 
       }
-      if (rect.top > 160) {
+      if (rect.top > 120) {
         this.fadeOutMusicFirst = false;
       }
-      if (rect2.top < 160) {
+      if (rect2.top < 120) {
 
         this.fadeOutMusic = true;
       }
       if (rect2.top > 150) {
         this.fadeOutMusic = false;
       }
-      if (rect3.top < 160) {
+      if (rect3.top < 140) {
 
         this.fadeOutMusicThird = true;
       }
