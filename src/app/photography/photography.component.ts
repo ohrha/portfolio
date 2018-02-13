@@ -18,6 +18,7 @@ export class PhotographyComponent implements OnInit {
   backgroundImageShow6 = false;
   backgroundImageShow7 = false;
   backgroundImageShow2Hide=false;
+  fadeIn:boolean = false;
   index:number = 0;
 
   ngOnInit() {
@@ -29,6 +30,12 @@ export class PhotographyComponent implements OnInit {
       this.backgroundImageShow=true;
       this.backgroundImageShow2 = false;
       this.index=1;
+      setTimeout(()=>{
+
+        this.fadeIn=true;
+
+
+      },500);
 
     }
     else if(this.index == 1){
@@ -36,6 +43,13 @@ export class PhotographyComponent implements OnInit {
       this.backgroundImageShow2 = true;
       this.backgroundImageShow = false;
       this.index=2
+            setTimeout(()=>{
+
+        this.fadeIn=true;
+  
+
+      },500);
+      
 
     }
        else if(this.index == 2){
@@ -43,6 +57,12 @@ export class PhotographyComponent implements OnInit {
       this.backgroundImageShow3 = true;
       this.backgroundImageShow2 = false;
       this.index=3
+            setTimeout(()=>{
+
+        this.fadeIn=true;
+
+
+      },500);
 
     }
        else if(this.index == 3){
@@ -50,6 +70,11 @@ export class PhotographyComponent implements OnInit {
       this.backgroundImageShow4 = true;
       this.backgroundImageShow3 = false;
       this.index=4
+            setTimeout(()=>{
+
+        this.fadeIn=true;
+     
+      },500);
 
     }
        else if(this.index == 4){
@@ -57,6 +82,12 @@ export class PhotographyComponent implements OnInit {
       this.backgroundImageShow5 = true;
       this.backgroundImageShow4 = false;
       this.index=5
+            setTimeout(()=>{
+
+        this.fadeIn=true;
+
+
+      },500);
 
     }
        else if(this.index == 5){
@@ -64,6 +95,12 @@ export class PhotographyComponent implements OnInit {
       this.backgroundImageShow6 = true;
       this.backgroundImageShow5 = false;
       this.index=6
+            setTimeout(()=>{
+
+        this.fadeIn=true;
+  
+
+      },500);
 
     }
        else if(this.index == 6){
@@ -71,11 +108,23 @@ export class PhotographyComponent implements OnInit {
       this.backgroundImageShow7 = true;
       this.backgroundImageShow6 = false;
       this.index=7
+            setTimeout(()=>{
+
+        this.fadeIn=true;
+    
+
+      },500);
 
     }
       else if(this.index == 7){
       this.backgroundImageShow7 = false;
       this.index=0
+            setTimeout(()=>{
+
+        this.fadeIn=true;
+      
+
+      },500);
 
     }
          
