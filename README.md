@@ -1,11 +1,5 @@
 # Portfolio
 
-A quick portfolio site, created as a way to display some of the project i've been involved in, as well as get 
-to know Angular 5's built in service worker, and the new css grid module, now available in all major browsers.
+A quick portfolio site, created as a way to display some of the projects i've been involved in, as well as get to know Angular 5's built in service worker, get practice with push notifications, and work with the new css grid module, now available in most modern browsers (Excluding IE11).
 
-
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
+https://prtflio.herokuapp.com/rose
