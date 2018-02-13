@@ -1,31 +1,31 @@
-
-<div (click)="changePhoto()" class = "main-content animated fadeIn">
-
-
-<div class="observe">
-    <p class="observetext">OBSERVE</p>
-</div>
-
-<div *ngIf="backgroundImageShow"class="animated fadeIn background-image" >
-    
-</div>
-<div *ngIf ="backgroundImageShow2" [ngClass]="{'animated': fadeIn,'fadeIn':fadeIn}"class="background-image2"  >
-</div>
-<div *ngIf ="backgroundImageShow3" [ngClass]="{'animated': fadeIn,'fadeIn':fadeIn}"class=" background-image3"  >
-</div>
-<div *ngIf ="backgroundImageShow4" [ngClass]="{'animated': fadeIn,'fadeIn':fadeIn}"class="background-image4"  >
-</div>
-<div *ngIf ="backgroundImageShow5" [ngClass]="{'animated': fadeIn,'fadeIn':fadeIn}"class="background-image5"  >
-</div>
-<div *ngIf ="backgroundImageShow6" [ngClass]="{'animated': fadeIn,'fadeIn':fadeIn}"class="background-image6"  >
-</div>
-<div *ngIf ="backgroundImageShow7" [ngClass]="{'animated': fadeIn,'fadeIn':fadeIn}"class="background-image7"  >
-</div>
+<div (click)="changePhoto()" class="main-content animated fadeIn">
 
 
-<div style="text-align:center"class = "homebutton">
-    <i style="color:white; font-size:25px; opacity:.8;" [routerLink]="['/']"class="fa fa-home" aria-hidden="true"></i>
+    <div class="observe">
+        <p class="observetext">OBSERVE</p>
+        <p *ngIf="showInstructions" class="observetext " [ngClass]="{'animated':!showInstructions,'fadeOut':!showInstructions}">(click to scroll)</p>
+    </div>
 
-</div>
-  
+    <div *ngIf="backgroundImageShow" class="animated fadeIn background-image">
+
+    </div>
+    <div *ngIf="backgroundImageShow2" [ngClass]="{'animated': fadeIn,'fadeIn':fadeIn}" class="background-image2">
+    </div>
+    <div *ngIf="backgroundImageShow3" [ngClass]="{'animated': fadeIn,'fadeIn':fadeIn}" class=" background-image3">
+    </div>
+    <div *ngIf="backgroundImageShow4" [ngClass]="{'animated': fadeIn,'fadeIn':fadeIn}" class="background-image4">
+    </div>
+    <div *ngIf="backgroundImageShow5" [ngClass]="{'animated': fadeIn,'fadeIn':fadeIn}" class="background-image5">
+    </div>
+    <div *ngIf="backgroundImageShow6" [ngClass]="{'animated': fadeIn,'fadeIn':fadeIn}" class="background-image6">
+    </div>
+    <div *ngIf="backgroundImageShow7" [ngClass]="{'animated': fadeIn,'fadeIn':fadeIn}" class="background-image7">
+    </div>
+
+
+    <div style="text-align:center" class="homebutton">
+        <i style="color:white; font-size:25px; opacity:.8;" [routerLink]="['/']" class="fa fa-home" aria-hidden="true"></i>
+
+    </div>
+
 </div>

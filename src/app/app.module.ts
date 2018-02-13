@@ -15,13 +15,13 @@ import { HomeComponent } from './home/home.component';
 import { MusicComponent } from './music/music.component';
 import { ShopComponent } from './shop/shop.component';
 
-import { ConfigService }  from './services/config.service';
+import { ConfigService } from './services/config.service';
 import { PushService } from './services/push.service';
 import { FilmComponent } from './film/film.component';
 import { PhotographyComponent } from './photography/photography.component';
 
 const appRoutes = [
-   {
+  {
     path: '', component: HomeComponent
   },
   {
@@ -38,10 +38,10 @@ const appRoutes = [
   {
     path: 'film', component: FilmComponent
   }
-  ,{
-    path:'photography', component: PhotographyComponent
+  , {
+    path: 'photography', component: PhotographyComponent
   }
-  
+
   //
 ]
 ///
@@ -62,9 +62,9 @@ const appRoutes = [
     ServiceWorkerModule.register('/ngsw-worker.js', { enabled: environment.production }),
     RouterModule.forRoot(appRoutes),
     HttpModule,
-    
+
   ],
-  providers: [ConfigService,PushService],
+  providers: [ConfigService, PushService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

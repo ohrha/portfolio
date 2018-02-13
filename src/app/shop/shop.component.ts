@@ -22,31 +22,32 @@ export class ShopComponent implements OnInit {
   @HostListener('window:scroll', ['$event'])
   onResize(event) {
 
-/*
-    const doc = document.documentElement;
-    var left = (window.pageXOffset || doc.scrollLeft) - (doc.clientLeft || 0);
-    var top = (window.pageYOffset || doc.scrollTop) - (doc.clientTop || 0);
-
-    if (top > 120) {
-      this.fadeOutMusicFirst = true;
-
-    }
-    if (top < 120) {
-      this.fadeOutMusicFirst = false;
-    }
-    if (top > 227) {
-
-      this.fadeOutMusic = true;
-
-    }
-    if (top < 227) {
-
-      this.fadeOutMusic = false;
-    }
-    */
+    /*
+        const doc = document.documentElement;
+        var left = (window.pageXOffset || doc.scrollLeft) - (doc.clientLeft || 0);
+        var top = (window.pageYOffset || doc.scrollTop) - (doc.clientTop || 0);
+    
+        if (top > 120) {
+          this.fadeOutMusicFirst = true;
+    
+        }
+        if (top < 120) {
+          this.fadeOutMusicFirst = false;
+        }
+        if (top > 227) {
+    
+          this.fadeOutMusic = true;
+    
+        }
+        if (top < 227) {
+    
+          this.fadeOutMusic = false;
+        }
+        */
   }
 
   constructor(private swPush: SwPush, private configService: ConfigService, private pushService: PushService, private serviceworker: ServiceWorkerModule) { }
+
   ngAfterViewInit() {
 
     console.log(this.div.nativeElement);
@@ -97,9 +98,9 @@ export class ShopComponent implements OnInit {
   }
   ngOnInit() {
 
-  
+
 
   }
 
-  
+
 }
