@@ -1,19 +1,31 @@
-<div class = "main-container">
 
-<div class = "header">
-  <p style="font-family:'Bellefair'; font-size:30px; text-decoration:underline;">A<span style="font-style:italic; color:#ff96e8;"> MEAN</span> SHOP</p>
+<div (click)="changePhoto()" class = "main-content animated fadeIn">
+
+
+<div class="observe">
+    <p class="observetext">OBSERVE</p>
 </div>
-<div class = "body">
-  <div class = "body-description">
-    <br>
-    <br>
+
+<div *ngIf="backgroundImageShow"class="animated fadeIn background-image" >
     
-<ul>
-  <li>User Profiles</li>
-  <li>Like System</li>
-  <li>Administration</li>
-  <li>Email Functionality through Node Mailer</li>
-</ul>
-  </div>
 </div>
+<div *ngIf ="backgroundImageShow2"class="animated fadeIn background-image2"  >
+</div>
+<div *ngIf ="backgroundImageShow3"class="animated fadeIn background-image3"  >
+</div>
+<div *ngIf ="backgroundImageShow4"class="animated fadeIn background-image4"  >
+</div>
+<div *ngIf ="backgroundImageShow5"class="animated fadeIn background-image5"  >
+</div>
+<div *ngIf ="backgroundImageShow6"class="animated fadeIn background-image6"  >
+</div>
+<div *ngIf ="backgroundImageShow7"class="animated fadeIn background-image7"  >
+</div>
+
+
+<div style="text-align:center"class = "homebutton">
+    <i style="color:white; font-size:25px; opacity:.8;" [routerLink]="['/']"class="fa fa-home" aria-hidden="true"></i>
+
+</div>
+  
 </div>

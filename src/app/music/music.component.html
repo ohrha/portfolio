@@ -1,30 +1,81 @@
-<div (click)="changePhoto()" class = "main-content animated fadeIn">
 
 
-<div class="observe">
-    <p class="observetext">OBSERVE</p>
-</div>
 
-<div *ngIf="backgroundImageShow"class="animated fadeIn background-image" >
+<div class="main-content animated fadeIn">
+ <div class="header">
+    <p>JONNY DEEP</p>
+  </div>
+  <div class = "body" #viewchild>
+<br>
+  <br>
+       <br>
+        <br>
+   <br>
+        <div class ="selectionstitle">
+        <p style="font-family:'Playfair Display'">Selections</p>
+        </div>
+     <div id="fader" [ngClass]="{'audioplayerdissapearfirst':fadeOutMusicFirst}"class="audioplayer fader">
+     
+
     
-</div>
-<div *ngIf ="backgroundImageShow2"class="animated fadeIn background-image2"  >
-</div>
-<div *ngIf ="backgroundImageShow3"class="animated fadeIn background-image3"  >
-</div>
-<div *ngIf ="backgroundImageShow4"class="animated fadeIn background-image4"  >
-</div>
-<div *ngIf ="backgroundImageShow5"class="animated fadeIn background-image5"  >
-</div>
-<div *ngIf ="backgroundImageShow6"class="animated fadeIn background-image6"  >
-</div>
-<div *ngIf ="backgroundImageShow7"class="animated fadeIn background-image7"  >
-</div>
+        
+  <p style="font-family:'Playfair Display'">Wood Of The Royal Forest</p>
 
+        <audio controls>
+          <source src="/assets/woodoftheroyalforest.mp3" type="audio/mpeg"> Your browser does not support the audio element.
+        </audio>
+      </div>
+               <div id="fader2" [ngClass]="{'audioplayerdissapear':fadeOutMusic}"class = "audioplayer2 fader">
+       <p style="font-family:'Playfair Display'">Fire Eater</p>
 
-<div style="text-align:center"class = "homebutton">
-    <i style="color:white; font-size:25px; opacity:.8;" [routerLink]="['/']"class="fa fa-home" aria-hidden="true"></i>
+        <audio controls>
+          <source src="/assets/fireeater.mp3" type="audio/mpeg"> 
+        </audio>
 
-</div>
-  
-</div>
+      </div>
+                 <div id="fader3" [ngClass]="{'audioplayerdissapearthird':fadeOutMusicThird}"class = "audioplayer3 fader">
+       <p style="font-family:'Playfair Display'">Cleaver</p>
+
+        <audio controls>
+          <source src="/assets/cleaver.mp3" type="audio/mpeg"> 
+        </audio>
+       
+
+      </div>
+     
+         <div id="fader4" [ngClass]="{'descriptionreveal':descriptionReveal}" class = "description">
+           <br>
+           <br>
+          <p>Jonny Deep</p>
+          <p>A musical project.A musical project.A musical project.A musical project.A musical project.
+            A musical project.A musical project.A musical project.A musical project.A musical project.A musical project.
+            A musical project.A musical project.A musical project.A musical project.A musical project.sA musical project.A musical project.
+            A musical project.A musical project.A musical project.A musical project.A musical project.A musical project.
+            .A musical project.v.A musical project..A musical project..A musical project..A musical project..A musical project..A musical project.
+            .A musical project..A musical project..A musical project..A musical project..A musical project..A musical project.
+            .A musical project..A musical project..A musical project..A musical project..A musical project..A musical project..A musical project..A musical project.
+            .A musical project..A musical project..A musical project..A musical project..A musical project..A musical project..A musical project..A musical project..A musical project.
+            .A musical project..A musical project..A musical project..A musical project..A musical project..A musical project..A musical project.
+            .A musical project..A musical project..A musical project..A musical project..A musical project..A musical project.
+            A musical project.A musical project.A musical project.A musical project.A musical project.A musical project.
+            A musical project.A musical project.A musical project.A musical project.A musical project.sA musical project.A musical project.
+            A musical project.A musical project.A musical project.A musical project.A musical project.A musical project.
+            .A musical project.v.A musical project..A musical project..A musical project..A musical project..A musical project..A musical project.
+            .A musical project..A musical project..A musical project..A musical project..A musical project..A musical project.
+            .A musical project..A musical project..A musical project..A musical project..A musical project..A musical project..A musical project..A musical project.
+            .A musical project..A musical project..A musical project..A musical project..A musical project..A musical project..A musical project..A musical project..A musical project.
+            .A musical project..A musical project..A musical project..A musical project..A musical project..A musical project..A musical project.
+            .A musical project..A musical project..A musical project..A musical project..A musical project..A musical project.
+          </p>
+        </div>
+     
+         
+     
+  </div>
+ 
+   <div class="footer">
+  <div class = "innerfooter">
+    <button (click)="subscribeToPush();" style="color:black;">Subo</button>
+
+  </div>
+  </div>

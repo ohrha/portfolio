@@ -1,43 +1,388 @@
-.main-container{
 
 
-display:grid;
-grid-template-columns:repeat(10,1fr);
-grid-template-rows:repeat(10,1fr);
-grid-auto-rows:(100px,auto);
-grid-gap:20px;
-height:100%;
-background-image:url('https://raw.githubusercontent.com/ohrha/MEAN-Shop/master/public/img/DOCUMENTATION%20IMAGES/SHOP-TOP.jpg');
-background-size:cover;
-background-repeat:no-repeat;
-background-position:center;
+
+
+
+.main-content{
+
+    display:grid;
+    grid-template-columns: repeat(10,1fr);
+    grid-template-rows:repeat(10,1fr);
+    grid-auto-rows:(100px,auto);
+    
+    grid-gap:20px;
+    height:100%;
+        background-image: url('../../assets/1.jpg');
+     background-size:cover;
+
 }
-.header{
+.observe{
+
+    grid-column: 4/8;
+    
+    grid-row:5/7;
+    background-color:transparent;
+    text-align:center;
+    transition:5s;
+}
+.homebutton{
+
+    grid-column:4/8;
+    grid-row:8/9;
+}
+.observetext{
+    font-family:'Opens Sans Condensed';
+    font-size:30px;
+    color:white;
+    opacity:.8;
+}
+.background-image{
+   
+    grid-column:1/11;
+    grid-row:1/11;
+
+     background-image: url('/assets/n20.jpg');
+     background-size:contain;
+     background-repeat:no-repeat;
+     background-position:center;
+     opacity:1;
+     transition:1s;
+   /* background-size: contain;
+    background-repeat:no-repeat;
+    background-position:center;
+    */
+
+ 
+}
+.background-image-hide{
 
     grid-column:1/11;
-    grid-row:2/3;
-    border:1px solid black;
-    background-color:white;
+    grid-row:1/11;
+
+
+    opacity:0;
+    transition:1s;
 
 }
-.body{
+.background-image2{
+     
+    grid-column:1/11;
+    grid-row:1/11;
 
-    grid-column:1/9;
-    grid-row:3/10;
+     background-image: url('/assets/benchsml.jpg');
+     background-size:contain;
+     background-repeat:no-repeat;
+     background-position:center;
+
+     opacity:1;
+     transition:1s;
+
+ 
+
+ 
+}
+.background-image2-hide{
+    
+    grid-column:1/11;
+    grid-row:1/11;
+
+
+    opacity:0;
+    transition:1s;
+}
+.background-image3{
+    
+    grid-column:1/11;
+    grid-row:1/11;
+
+     background-image: url('/assets/building.jpg');
+     background-size:contain;
+     background-repeat:no-repeat;
+     background-position:center;
+
+     opacity:1;
+     transition:1s;
+
+   /* background-size: contain;
+    background-repeat:no-repeat;
+    background-position:center;
+    */
+
+ 
+}
+.background-image3-hide{
+    
+    grid-column:1/11;
+    grid-row:1/11;
+
+
+    opacity:0;
+    transition:1s;
+}
+.background-image4{
+    
+    grid-column:1/11;
+    grid-row:1/11;
+
+     background-image: url('/assets/firesml.jpg');
+     background-size:contain;
+     background-repeat:no-repeat;
+     background-position:center;
+
+     opacity:1;
+     transition:1s;
+
+   /* background-size: contain;
+    background-repeat:no-repeat;
+    background-position:center;
+    */
+
+ 
+}
+.background-image4-hide{
+    
+    grid-column:1/11;
+    grid-row:1/11;
+
+
+    opacity:0;
+    transition:1s;
+}
+.background-image5{
+    
+    grid-column:1/11;
+    grid-row:1/11;
+
+     background-image: url('/assets/tuffsml.jpg');
+     background-size:contain;
+     background-repeat:no-repeat;
+     background-position:center;
+
+     opacity:1;
+     transition:1s;
+
+   /* background-size: contain;
+    background-repeat:no-repeat;
+    background-position:center;
+    */
+
+ 
+}
+.background-image5-hide{
+    
+    grid-column:1/11;
+    grid-row:1/11;
+
+
+    opacity:0;
+    transition:1s;
+}
+.background-image6{
+    
+    grid-column:1/11;
+    grid-row:1/11;
+
+     background-image: url('/assets/moonsml.jpg');
+     background-size:contain;
+     background-repeat:no-repeat;
+     background-position:center;
+
+     opacity:1;
+     transition:1s;
+
+   /* background-size: contain;
+    background-repeat:no-repeat;
+    background-position:center;
+    */
+
+ 
+}
+.background-image6-hide{
+    
+    grid-column:1/11;
+    grid-row:1/11;
+
+
+    opacity:0;
+    transition:1s;
+}
+.background-image7{
+    
+    grid-column:1/11;
+    grid-row:1/11;
+
+     background-image: url('/assets/ringsml.jpg');
+     background-size:contain;
+     background-repeat:no-repeat;
+     background-position:center;
+
+     opacity:1;
+     transition:1s;
+
+   /* background-size: contain;
+    background-repeat:no-repeat;
+    background-position:center;
+    */
+
+ 
+}
+.background-image7-hide{
+    
+    grid-column:1/11;
+    grid-row:1/11;
+
+
+    opacity:0;
+    transition:1s;
+}
+.background-image8{
+    
+    grid-column:1/11;
+    grid-row:1/11;
+
+     background-image: url('/assets/74.jpg');
+     background-size:contain;
+     background-repeat:no-repeat;
+     background-position:center;
+
+     opacity:1;
+     transition:1s;
+
+   /* background-size: contain;
+    background-repeat:no-repeat;
+    background-position:center;
+    */
+
+ 
+}
+.background-image8-hide{
+    
+    grid-column:1/11;
+    grid-row:1/11;
+
+
+    opacity:0;
+    transition:1s;
+}
+.background-image9{
+    
+    grid-column:1/11;
+    grid-row:1/11;
+
+     background-image: url('/assets/74.jpg');
+     background-size:contain;
+     background-repeat:no-repeat;
+     background-position:center;
+
+     opacity:1;
+     transition:1s;
+
+   /* background-size: contain;
+    background-repeat:no-repeat;
+    background-position:center;
+    */
+
+ 
+}
+.background-image9-hide{
+    
+    grid-column:1/11;
+    grid-row:1/11;
+
+
+    opacity:0;
+    transition:1s;
+}
+
+
+@media(max-width:700px){
+  
+.main-content{
+
     display:grid;
-    grid-template-columns:repeat(10,1fr);
+    grid-template-columns: repeat(10,1fr);
     grid-template-rows:repeat(10,1fr);
-    grid-gap:5px;
-    border:1px solid black;
-    background-color:rgba(239, 234, 236,.6);
-
+    grid-auto-rows:(100px,auto);
+    
+    grid-gap:20px;
+    height:100%;
+        background-image: url('../../assets/1.jpg');
+     background-size:cover;
 
 }
-.body-description{
+.observe{
 
-    grid-column:2/10;
-    grid-row:2/10;
-    border:1px solid black;
-    background-color:rgba(255, 204, 226,.4);
-    box-shadow:2px 2px 2px black;
+    grid-column: 4/8;
+    grid-row:5/7;
+    background-color:transparent;
+    transition:5s;
+}
+.homebutton{
+
+    grid-column:1/11;
+    grid-row:8/9;
+}
+.observetext{
+    font-family:'Opens Sans Condensed';
+    font-size:30px;
+    color:white;
+    opacity:.8;
+}
+.background-image{
+   
+    grid-column:1/11;
+    grid-row:1/11;
+
+     background-image: url('../../assets/n20.jpg');
+     background-size:contain;
+     background-repeat:no-repeat;
+     background-position:center;
+     opacity:1;
+     transition:1s;
+   /* background-size: contain;
+    background-repeat:no-repeat;
+    background-position:center;
+    */
+
+ 
+}
+.background-image-hide{
+
+    grid-column:1/11;
+    grid-row:1/11;
+
+
+    opacity:0;
+    transition:1s;
+
+}
+.background-image2{
+    
+    grid-column:1/11;
+    grid-row:1/11;
+
+     background-image: url('../../assets/74.jpg');
+     background-size:contain;
+     background-repeat:no-repeat;
+     background-position:center;
+
+     opacity:1;
+     transition:1s;
+
+   /* background-size: contain;
+    background-repeat:no-repeat;
+    background-position:center;
+    */
+
+ 
+}
+.background-image2-hide{
+    
+    grid-column:1/11;
+    grid-row:1/11;
+
+
+    opacity:0;
+    transition:1s;
+}
 }
