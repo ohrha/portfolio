@@ -1,25 +1,19 @@
 
-
-
-
-
 .main-content{
 
     display:grid;
     grid-template-columns: repeat(10,1fr);
     grid-template-rows:repeat(10,1fr);
     grid-auto-rows:(100px,auto);
-    
     grid-gap:20px;
     height:100%;
-        background-image: url('../../assets/1.jpg');
-     background-size:cover;
+    background-image: url('../../assets/1.jpg');
+    background-size:cover;
 
 }
 .observe{
 
-    grid-column: 4/8;
-    
+    grid-column: 4/8; 
     grid-row:5/7;
     background-color:transparent;
     text-align:center;
@@ -40,26 +34,18 @@
    
     grid-column:1/11;
     grid-row:1/11;
-
-     background-image: url('/assets/n20.jpg');
-     background-size:contain;
-     background-repeat:no-repeat;
-     background-position:center;
-     opacity:1;
-     transition:1s;
-   /* background-size: contain;
+    background-image: url('/assets/n20.jpg');
+    background-size:contain;
     background-repeat:no-repeat;
     background-position:center;
-    */
-
+    opacity:1;
+    transition:1s;
  
 }
 .background-image-hide{
 
     grid-column:1/11;
     grid-row:1/11;
-
-
     opacity:0;
     transition:1s;
 
@@ -68,7 +54,6 @@
      
     grid-column:1/11;
     grid-row:1/11;
-
     background-image: url('../../assets/74.jpg');     
     background-size:contain;
     background-repeat:no-repeat;
@@ -76,16 +61,11 @@
     opacity:1;
     transition:1s;
 
- 
-
- 
 }
 .background-image2-hide{
     
     grid-column:1/11;
     grid-row:1/11;
-
-
     opacity:0;
     transition:1s;
 }
@@ -93,28 +73,18 @@
     
     grid-column:1/11;
     grid-row:1/11;
-
-     background-image: url('/assets/building.jpg');
-     background-size:contain;
-     background-repeat:no-repeat;
-     background-position:center;
-
-     opacity:1;
-     transition:1s;
-
-   /* background-size: contain;
+    background-image: url('/assets/building.jpg');
+    background-size:contain;
     background-repeat:no-repeat;
     background-position:center;
-    */
-
+    opacity:1;
+    transition:1s;
  
 }
 .background-image3-hide{
     
     grid-column:1/11;
     grid-row:1/11;
-
-
     opacity:0;
     transition:1s;
 }
@@ -122,28 +92,18 @@
     
     grid-column:1/11;
     grid-row:1/11;
-
-     background-image: url('/assets/firesml.jpg');
-     background-size:contain;
-     background-repeat:no-repeat;
-     background-position:center;
-
-     opacity:1;
-     transition:1s;
-
-   /* background-size: contain;
+    background-image: url('/assets/firesml.jpg');
+    background-size:contain;
     background-repeat:no-repeat;
     background-position:center;
-    */
-
+    opacity:1;
+    transition:1s;
  
 }
 .background-image4-hide{
     
     grid-column:1/11;
     grid-row:1/11;
-
-
     opacity:0;
     transition:1s;
 }
@@ -151,28 +111,18 @@
     
     grid-column:1/11;
     grid-row:1/11;
-
-     background-image: url('/assets/tuffsml.jpg');
-     background-size:contain;
-     background-repeat:no-repeat;
-     background-position:center;
-
-     opacity:1;
-     transition:1s;
-
-   /* background-size: contain;
+    background-image: url('/assets/tuffsml.jpg');
+    background-size:contain;
     background-repeat:no-repeat;
     background-position:center;
-    */
-
+    opacity:1;
+    transition:1s;
  
 }
 .background-image5-hide{
     
     grid-column:1/11;
     grid-row:1/11;
-
-
     opacity:0;
     transition:1s;
 }
@@ -180,28 +130,17 @@
     
     grid-column:1/11;
     grid-row:1/11;
-
-     background-image: url('/assets/moonsml.jpg');
-     background-size:contain;
-     background-repeat:no-repeat;
-     background-position:center;
-
-     opacity:1;
-     transition:1s;
-
-   /* background-size: contain;
+    background-image: url('/assets/moonsml.jpg');
+    background-size:contain;
     background-repeat:no-repeat;
     background-position:center;
-    */
-
- 
+    opacity:1;
+    transition:1s; 
 }
 .background-image6-hide{
     
     grid-column:1/11;
     grid-row:1/11;
-
-
     opacity:0;
     transition:1s;
 }
@@ -209,28 +148,18 @@
     
     grid-column:1/11;
     grid-row:1/11;
-
-     background-image: url('/assets/ringsml.jpg');
-     background-size:contain;
-     background-repeat:no-repeat;
-     background-position:center;
-
-     opacity:1;
-     transition:1s;
-
-   /* background-size: contain;
+    background-image: url('/assets/ringsml.jpg');
+    background-size:contain;
     background-repeat:no-repeat;
     background-position:center;
-    */
+    opacity:1;
+    transition:1s;
 
- 
 }
 .background-image7-hide{
     
     grid-column:1/11;
     grid-row:1/11;
-
-
     opacity:0;
     transition:1s;
 }
@@ -238,28 +167,18 @@
     
     grid-column:1/11;
     grid-row:1/11;
-
-     background-image: url('/assets/74.jpg');
-     background-size:contain;
-     background-repeat:no-repeat;
-     background-position:center;
-
-     opacity:1;
-     transition:1s;
-
-   /* background-size: contain;
+    background-image: url('/assets/74.jpg');
+    background-size:contain;
     background-repeat:no-repeat;
     background-position:center;
-    */
-
+    opacity:1;
+    transition:1s;
  
 }
 .background-image8-hide{
     
     grid-column:1/11;
     grid-row:1/11;
-
-
     opacity:0;
     transition:1s;
 }
@@ -267,28 +186,18 @@
     
     grid-column:1/11;
     grid-row:1/11;
-
-     background-image: url('/assets/74.jpg');
-     background-size:contain;
-     background-repeat:no-repeat;
-     background-position:center;
-
-     opacity:1;
-     transition:1s;
-
-   /* background-size: contain;
+    background-image: url('/assets/74.jpg');
+    background-size:contain;
     background-repeat:no-repeat;
     background-position:center;
-    */
+    opacity:1;
+    transition:1s;
 
- 
 }
 .background-image9-hide{
     
     grid-column:1/11;
     grid-row:1/11;
-
-
     opacity:0;
     transition:1s;
 }

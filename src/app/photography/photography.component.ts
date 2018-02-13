@@ -35,7 +35,7 @@ export class PhotographyComponent implements OnInit {
         this.fadeIn=true;
 
 
-      },500);
+      },1000);
 
     }
     else if(this.index == 1){
@@ -48,7 +48,7 @@ export class PhotographyComponent implements OnInit {
         this.fadeIn=true;
   
 
-      },500);
+      },1000);
       
 
     }
@@ -62,7 +62,7 @@ export class PhotographyComponent implements OnInit {
         this.fadeIn=true;
 
 
-      },500);
+      },1000);
 
     }
        else if(this.index == 3){
@@ -74,7 +74,7 @@ export class PhotographyComponent implements OnInit {
 
         this.fadeIn=true;
      
-      },500);
+      },1000);
 
     }
        else if(this.index == 4){
@@ -87,7 +87,7 @@ export class PhotographyComponent implements OnInit {
         this.fadeIn=true;
 
 
-      },500);
+      },1000);
 
     }
        else if(this.index == 5){
@@ -100,7 +100,7 @@ export class PhotographyComponent implements OnInit {
         this.fadeIn=true;
   
 
-      },500);
+      },1000);
 
     }
        else if(this.index == 6){
@@ -113,7 +113,7 @@ export class PhotographyComponent implements OnInit {
         this.fadeIn=true;
     
 
-      },500);
+      },1000);
 
     }
       else if(this.index == 7){
@@ -124,7 +124,7 @@ export class PhotographyComponent implements OnInit {
         this.fadeIn=true;
       
 
-      },500);
+      },1000);
 
     }
          
