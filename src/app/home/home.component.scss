@@ -40,6 +40,7 @@ $link-color: $accent;
     height:100%;
     grid-template-rows:repeat(6, 1fr) ;
     grid-template-columns:repeat(5,1fr) ;
+    
     grid-gap:20px;
 }
 
@@ -117,6 +118,85 @@ $link-color: $accent;
 
             }
             
+        }
+        .aleph{
+
+            background-image: url('/assets/moon.jpg');
+            background-size: cover;
+            background-position: top left;
+            font-family: 'Montserrat';
+            text-align: center;
+            font-size:25px;
+            color:#ddd;
+            text-shadow:0 0 3px rgba(0,0,0,0.5);
+            background-color:black;
+            background-blend-mode:multiply;
+            transition: all ease-in-out 300ms;
+            position:relative;
+           
+
+    &::before{
+
+                content:'';
+                display:block;
+                background: $black;
+                opacity:0.8;
+                position:absolute;
+                top:0;
+                left:0;
+                right:0;
+                bottom:0;
+
+            }
+            &:hover::before{
+
+               
+                opacity:0;
+                transition: all ease-in-out 300ms;
+                
+
+            }
+
+        }
+        
+        .gimmel{
+
+            background-image: url('/assets/moon.jpg');
+            background-size: cover;
+            background-position: top left;
+            font-family: 'Montserrat';
+            text-align: center;
+            font-size:25px;
+            color:#ddd;
+            text-shadow:0 0 3px rgba(0,0,0,0.5);
+            background-color:black;
+            background-blend-mode:multiply;
+            transition: all ease-in-out 300ms;
+            position:relative;
+           
+
+    &::before{
+
+                content:'';
+                display:block;
+                background: $black;
+                opacity:0.8;
+                position:absolute;
+                top:0;
+                left:0;
+                right:0;
+                bottom:0;
+
+            }
+            &:hover::before{
+
+               
+                opacity:0;
+                transition: all ease-in-out 300ms;
+                
+
+            }
+
         }
         
         .hay{
